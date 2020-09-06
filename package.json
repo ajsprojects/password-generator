@@ -1,0 +1,23 @@
+{
+  "name": "passwordgenerator",
+  "version": "1.0.0",
+  "description": "password generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajsprojects/passwordgenerator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajsprojects/passwordgenerator/issues"
+  },
+  "homepage": "https://github.com/ajsprojects/passwordgenerator#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "generate-password": "^1.5.1"
+  }
+}
