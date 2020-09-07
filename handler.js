@@ -67,7 +67,7 @@ function calculateStrength(length, uppercase, special_characters, easy_remember,
     if (easy_remember) {
         strength -= 4;
     }
-    console.log("Calculate strength: " + strength);
+    console.log("Calculated strength: " + strength);
     return strength;
 }
 
@@ -76,7 +76,6 @@ function generatePassword(length, uppercase, special_characters, easy_remember, 
     var pass = '';
 
     if (!easy_remember) {
-        console.log("Not easy remember");
         pass = generator.generate({
             length: length,
             symbols: special_characters,
