@@ -1,0 +1,13 @@
+service: passwordgenerator
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+functions:
+  generate:
+    handler: handler.generate
+    events:
+      - http:
+          path: password/generate
+          method: post
