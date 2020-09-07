@@ -13,13 +13,13 @@ module.exports.generate = (event, context, callback) => {
             console.log(body);
             var length = (body.length);
             console.log("length " + length);
-            var uppercase = (body.uppercase);
+            var uppercase = JSON.parse(body.uppercase);
             console.log("uppercase " + uppercase);
-            var special_characters = (body.special_characters);
+            var special_characters = JSON.parse(body.special_characters);
             console.log("special characters " + special_characters);
-            var easy_remember = (body.easy_remember);
+            var easy_remember = JSON.parse(body.easy_remember);
             console.log("easy remember " + easy_remember);
-            var numbers = (body.numbers);
+            var numbers = JSON.parse(body.numbers);
             console.log("numbers " + numbers);
         } catch (e) { console.log(e); }
     }
@@ -76,7 +76,7 @@ function generatePassword(length, uppercase, special_characters, easy_remember, 
     var pass = '';
 
     if (!easy_remember) {
-
+        console.log("Not easy remember");
         pass = generator.generate({
             length: length,
             symbols: special_characters,
