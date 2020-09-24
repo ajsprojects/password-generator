@@ -46,7 +46,11 @@ module.exports.generate = (event, context, callback) => {
         callback(null, {
             "isBase64Encoded": false,
             "statusCode": 200,
-            "headers": { "Content-Type": "application/json" },
+            "headers": {
+                "Content-Type": "application/json",
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Credentials': true
+            },
             "multiValueHeaders": null,
             "body": JSON.stringify(responseBody)
         });
@@ -56,16 +60,16 @@ module.exports.generate = (event, context, callback) => {
 function calculateStrength(length, uppercase, special_characters, easy_remember, numbers) {
     var strength = parseInt(length);
     if (uppercase) {
-        strength += 4;
+        strength += 3;
     }
     if (special_characters) {
-        strength += 5;
-    }
-    if (numbers) {
         strength += 4;
     }
+    if (numbers) {
+        strength += 3;
+    }
     if (easy_remember) {
-        strength -= 4;
+        strength -= 3;
     }
     console.log("Calculated strength: " + strength);
     return strength;

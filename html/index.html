@@ -1,0 +1,154 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Password Generator</title>
+	<meta name="keywords" content="password generator, random password, password, generation, password random, generate random password, generate random, pass, generate password online, online" />
+	<meta name="description" content="A simple & secure random password generator online" />
+	<link href="http://fonts.googleapis.com/css?family=Varela" rel="stylesheet" />
+	<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		  integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+	<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+	<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+</head>
+
+<body>
+
+	<div id="wrapper">
+		<div id="menu">
+			<ul>
+				<li class="current_page_item"><a href="index.html" accesskey="1" title="">Home</a></li>
+				<li><a href="#" accesskey="2" title="">Coming soon</a></li>
+			</ul>
+		</div>
+
+		<div id="banner">
+			<div class="container">
+				<div class="title">
+					<h2>Password Sense</h2>
+					<h5></h5>
+					<span class="byline">FREE SECURE & SIMPLE PASSWORD GENERATOR TOOL ONLINE</span>
+				</div>
+
+			</div>
+		</div>
+
+		<div id="extra" class="container">
+			<div class="title">
+				<h3>LETS GET STARTED...</h3>
+			</div>
+			<div id="onebox">
+				<div class="boxA">
+					<div class="box">
+
+						<div class="input-group mb-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text" id="basic-addon1">Password</span>
+							</div>
+							<input type="text" id="passField" value="" class="form-control" aria-label="password" aria-describedby="basic-addon1">
+						</div>
+						<div class="input-group mt-4 mb-4 d-flex justify-content-between mr-auto ml-auto" style="width: 680px;">
+							<div class="custom-switch">
+								<label>
+									<input type="checkbox" class="switch" id="switch-numbers" /> Numbers
+								</label>
+							</div>
+							<div class="custom-switch">
+								<label>
+									<input type="checkbox" class="switch" id="switch-uppercase" /> Uppercase
+								</label>
+							</div>
+							<div class="custom-switch">
+								<label>
+									<input type="checkbox" class="switch" id="switch-special-chars" /> Special characters
+								</label>
+							</div>
+							<div class="custom-switch">
+								<label>
+									<input type="checkbox" data-toggle="tooltip" title="Limits special characters and numbers and places them at the end" class="switch" id="switch-easy-remember" /> Easy remember mode
+								</label>
+							</div>
+						</div>
+						<div class="slidecontainer d-flex ml-auto mr-auto" id="slider-group" style="width: 700px;">
+							<span class="mr-3">Length</span>
+							<input type="range" min="5" max="99" value="10" class="slider" id="slider">
+							<span class="ml-3 f" id="slider-value" style="width: 30px;">10</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div id="featured">
+				<div class="container">
+					<p> </p>
+
+					<!-- Green -->
+					<div class="progress" style="height: 25px;">
+						<div class="progress-bar bg-success" id="strength-bar" style="width:0%">Password strength<div>
+
+					
+						<!--$('#strength-bar').width(strength+"%").attr('aria-valuenow', strength);-->
+
+
+					</div>
+				</div>
+			</div>
+			<div id="featured"><p></p></div>
+
+			<div id="featured">
+				<div class="container">
+					<p> </p>
+
+					<button type="button" onclick="sendData()" class="btn btn-success btn-lg">Generate Password</button>
+					<p> </p>
+				</div>
+			</div>
+		</div>
+
+	
+
+
+		<div id="banner2">
+			<div class="container">
+
+				<strong>Why is using a password generator tool beneficial?</strong>
+				<p> </p>
+			
+					In todays digital age, passwords and security mean everything! And humans aren't always the best at
+					thinking of secure random passwords because we like to think of easy memorable passwords. Unfortunately,
+					these passwords are often easy to hack! A simple password such as "abc123" would take 0.19 MILLISECONDS
+					to hack! Our secure password generation tool uses complex algorithms to generate unique passwords. If
+					you select the "easy remember" option it will limit the number of special characters and numbers and
+					place them at the end of the password helping to make it easy to remember whilst remaining secure.
+			<p> </p>
+				<p>Use the password generation tool above to generate your password!</p>
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+	<script>
+		window.ga = function () {
+			ga.q.push(arguments)
+		};
+		ga.q = [];
+		ga.l = +new Date;
+		ga('create', 'UA-XXXXX-Y', 'auto');
+		ga('set', 'anonymizeIp', true);
+		ga('set', 'transport', 'beacon');
+		ga('send', 'pageview')
+	</script>
+	<script src="https://www.google-analytics.com/analytics.js" async></script>
+
+</body>
+
+</html>

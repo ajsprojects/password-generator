@@ -11,3 +11,4 @@ functions:
       - http:
           path: password/generate
           method: post
+          cors: true
