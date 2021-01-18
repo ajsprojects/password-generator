@@ -180,28 +180,34 @@ ul.contact li a.icon-rss:before {
 /*********************************************************************************/
 
 .button {
-	display: inline-block;
-	padding: 0em 2em;
-	background: #009E2D;
-	letter-spacing: 0.20em;
-	line-height: 3em;
-	text-decoration: none;
-	text-transform: uppercase;
-	font-weight: 400;
-	font-size: 1em;
-	color: #FFF;
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 
-.button:before {
-	display: inline-block;
-	background: #FFC31F;
-	margin-right: 1em;
-	width: 40px;
-	height: 40px;
-	line-height: 40px;
-	border-radius: 20px;
-	text-align: center;
-	color: #272925;
+.btn-primary.custom-btn {
+	background-color: #6fa86a;
+	border-color: #6fa86a;
+}
+
+.btn-primary.custom-btn:active {
+ 	background-color: #6fa86a;
+	border-color: #6fa86a;
+}
+
+.btn-primary.custom-btn:focus {
+ 	background-color: #6fa86a;
+	border-color: #6fa86a;
+}
+
+.btn-primary.custom-btn:hover {
+ 	background-color: #6fa86a;
+	border-color: #6fa86a;
 }
 
 /*********************************************************************************/
@@ -358,8 +364,8 @@ ul.contact li a.icon-rss:before {
 
 #banner {
 	overflow: hidden;
-	padding: 5em 0em 3em 0em;
-	background: #202020;
+	padding: 4em 0em 3em 0em;
+	background: #6fa86a;
 	background-size: cover;
 	text-align: center;
 	color: rgba(255, 255, 255, .8);
@@ -384,7 +390,7 @@ ul.contact li a.icon-rss:before {
 }
 
 #banner .title .byline {
-	color: rgba(255, 255, 255, .6);
+	color: rgba(255, 255, 255, .9);
 }
 
 #banner .button {
@@ -552,9 +558,9 @@ input[type=checkbox].switch::after {
 	transition: left 0.1s ease-in-out;
 }
 
-input[type=checkbox].switch:checked {
-	background: #a6a6a6;
-}
+	input[type=checkbox].switch:checked {
+		background: #6fa86a;
+	}
 
 input[type=checkbox].switch:checked::after {
 	left: 2.2em;
@@ -720,4 +726,15 @@ input[type=range]:focus::-ms-fill-lower {
 
 input[type=range]:focus::-ms-fill-upper {
 	background: #69c9d7;
+}
+
+progress-bar-title {
+	position: absolute;
+	text-align: center;
+	line-height: 1px; /* line-height should be equal to bar height */
+	overflow: hidden;
+	color: #4287f5;
+	right: 0;
+	left: 0;
+	top: 0;
 }

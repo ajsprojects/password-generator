@@ -60,16 +60,16 @@ module.exports.generate = (event, context, callback) => {
 function calculateStrength(length, uppercase, special_characters, easy_remember, numbers) {
     var strength = parseInt(length);
     if (uppercase) {
-        strength += 3;
+        strength += 2;
     }
     if (special_characters) {
-        strength += 4;
-    }
-    if (numbers) {
         strength += 3;
     }
+    if (numbers) {
+        strength += 2;
+    }
     if (easy_remember) {
-        strength -= 3;
+        strength -= 2;
     }
     console.log("Calculated strength: " + strength);
     return strength;

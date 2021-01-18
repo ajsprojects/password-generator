@@ -9,6 +9,6 @@ functions:
     handler: handler.generate
     events:
       - http:
-          path: password/generate
+          path: password
           method: post
           cors: true

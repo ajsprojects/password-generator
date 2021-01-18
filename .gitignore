@@ -1,4 +1,5 @@
 /Builds
 /node_modules
-/.vs 
 /.serverless
+/html/.vs/**
+/.vs/**
