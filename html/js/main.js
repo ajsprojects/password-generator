@@ -3,14 +3,13 @@ function generatePassword() {
 	var length = document.getElementById("slider").value;
 	console.log(length)
 
-	const url = 'https://qupapl2w9k.execute-api.us-east-1.amazonaws.com/dev/password';
+	const url = 'aws-server-url-hidden';
 	const data = {
 		"length": length,
 		"uppercase": $('#switch-uppercase').is(":checked"),
 		"special_characters": $('#switch-special-chars').is(":checked"),
 		"easy_remember": $('#switch-easy-remember').is(":checked"),
 		"numbers": $('#switch-numbers').is(":checked")
-
 	};
 
 	console.log(data)

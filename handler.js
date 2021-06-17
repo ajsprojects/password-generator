@@ -90,7 +90,7 @@ function generatePassword(length, uppercase, special_characters, easy_remember, 
         });
     }
 
-    if (easy_remember) { //Limits special characters and numbers and places them at the end of the string
+    if (easy_remember) { // Hybrid generator that limits special characters and numbers and places them at the end of the string so that it is easier to remember
 
         var specialcharsStringSimple = '!@#/?';
         var numberString = '1234567890';
